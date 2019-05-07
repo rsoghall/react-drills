@@ -11,7 +11,7 @@ class Login extends Component{
             password: ''
           
         }
-        this.handleLogin = this.handleLogin.bind(this)
+       
       }
       handlleUserName (name){
           this.setState({username: name})
@@ -19,7 +19,7 @@ class Login extends Component{
       handlePassword (pw) {
           this.setState({password: pw})
       }
-      handleLogin (){
+      handleLogin =() => {
         
           alert(`Username: ${this.state.username} Password: ${this.state.password}`)
       }
